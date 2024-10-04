@@ -33,7 +33,8 @@ public class PostAPIRequest {
 	  			.assertThat()
 	  			.statusCode(200)
 	  			.body("booking.firstname", Matchers.equalTo("CustomerFName"))
-	  			.body("booking.bookingdates.checkin", Matchers.equalTo("2024-10-25"));
+	  			.body("booking.bookingdates.checkin", Matchers.equalTo("2024-10-25"))
+	  			.body("booking.bookingdates.checkout", Matchers.equalTo("2024-10-30"));
 	  	
   }
 }
